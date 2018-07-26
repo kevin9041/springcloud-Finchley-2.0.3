@@ -1,20 +1,19 @@
 package com.misrobot.springcloud.controller;
 
-import com.misrobot.springcloud.service.HelloRibbenService;
+import com.misrobot.springcloud.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/ribben")
-public class HelloRibbenController {
+public class HelloController {
 
     @Autowired
-    HelloRibbenService helloRibbenService;
+    HelloService helloService;
 
-    @RequestMapping(value = "/testRibben")
-    public String testRibben(@RequestParam String name){
-        return helloRibbenService.testRibben(name);
+    @RequestMapping(value = "/hi")
+    public String hello(@RequestParam String name){
+        return helloService.hello(name);
     }
 }
