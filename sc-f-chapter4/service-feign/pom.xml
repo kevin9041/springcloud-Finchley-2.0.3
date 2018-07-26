@@ -13,7 +13,7 @@
 
 	<parent>
 		<groupId>com.misrobot.springcloud</groupId>
-		<artifactId>sc-f-chapter3</artifactId>
+		<artifactId>sc-f-chapter4</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
