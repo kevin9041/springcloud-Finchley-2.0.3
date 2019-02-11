@@ -14,7 +14,7 @@ public class HelloRibbenController {
     HelloRibbenService helloRibbenService;
 
     @RequestMapping(value = "/testRibben")
-    public String testRibben(@RequestParam String name){
+    public String testRibben(@RequestParam("change") String name){
         return helloRibbenService.testRibben(name);
     }
 }
