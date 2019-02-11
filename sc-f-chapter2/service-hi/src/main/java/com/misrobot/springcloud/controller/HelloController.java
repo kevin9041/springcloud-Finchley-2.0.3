@@ -16,4 +16,8 @@ public class HelloController {
     public String hello(@RequestParam String name){
         return helloService.hello(name);
     }
+    //@RequestMapping(value = "/hi/{xxx}")
+    //public String hello(@PathVariable("xxx") String name){
+    //    return helloService.hello(name);
+    //}
 }
